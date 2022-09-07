@@ -11,9 +11,9 @@ app.set('port', 3000)
 app.use(express.json())
 app.use(morgan('dev'))
 
-
-app.get('/', (req, res) => {
-  res.send('Hello World!')
+//Primer consigna
+app.get('/login', (req, res) => {
+  res.send('Login')
 })
 
 
@@ -37,4 +37,8 @@ app.post("/products/add",(req, res) => {
 
 app.listen(app.get('port'), () => {
   console.log('Server on port', app.get('port'))
+})
+
+app.delete("/products/delete", (req, res) => {
+  fs.readFile("")
 })
