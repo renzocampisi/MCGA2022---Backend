@@ -7,7 +7,6 @@ const app = express();
 app.use(express.json());
 app.use(express)
 
-
 mongoose.connect(process.env.DATABASE_URL)
   .then(() => {
     console.log("🟢 DB Connected");

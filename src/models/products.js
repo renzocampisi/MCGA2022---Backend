@@ -4,18 +4,15 @@ const { Schema } = mongoose
 
 const ProductsSchema = new Schema ({
     id: {
-        type: Schema.Types.ObjectId,
+        type: String
     },
     name: {
         type: String,
-        maxLenght: 50,
-        required: true,
-        unique: true,
+        required: true
     },
     description: {
         type: String,
-        maxLenght: 500,
-        required: true,
+        required: true
     },
     isDeleted: {
         type: Boolean,
